@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none" role="img" aria-label="openclaw-web icon">
+  <!-- Transparent background (default). Flat vector, no gradients/shadows. -->
+  <!-- Style intent aligns with the project’s calm, high-contrast system. :contentReference[oaicite:0]{index=0} -->
+
+  <!-- ===== Globe ring (behind) ===== -->
+  <g>
+    <!-- Thin outer ring -->
+    <circle cx="256" cy="256" r="176" stroke="#22D3EE" stroke-width="18" />
+
+    <!-- Simple “lat/long” hints (kept minimal for 16–32px legibility) -->
+    <path d="M80 256 H432" stroke="#22D3EE" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+    <path d="M256 80 V432" stroke="#22D3EE" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+
+    <!-- Two subtle meridian arcs -->
+    <path d="M256 80 C186 136 186 376 256 432" stroke="#22D3EE" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+    <path d="M256 80 C326 136 326 376 256 432" stroke="#22D3EE" stroke-width="14" stroke-linecap="round" opacity="0.95"/>
+  </g>
+
+  <!-- ===== Browser window (front) ===== -->
+  <g>
+    <!-- Outer window body -->
+    <rect x="112" y="144" width="288" height="224" rx="32" fill="#1D4ED8"/>
+
+    <!-- Header bar -->
+    <rect x="128" y="160" width="256" height="56" rx="24" fill="#22D3EE"/>
+
+    <!-- Header controls (3 dots) -->
+    <circle cx="156" cy="188" r="10" fill="#FFFFFF"/>
+    <circle cx="186" cy="188" r="10" fill="#FFFFFF"/>
+    <circle cx="216" cy="188" r="10" fill="#FFFFFF"/>
+
+    <!-- Inner page area -->
+    <rect x="136" y="232" width="240" height="120" rx="20" fill="#FFFFFF"/>
+
+    <!-- Minimal content lines (thick, high-contrast) -->
+    <path d="M160 264 H344" stroke="#1D4ED8" stroke-width="16" stroke-linecap="round"/>
+    <path d="M160 300 H312" stroke="#1D4ED8" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+  </g>
+
+  <!-- ===== Trust / check badge (overlapping) ===== -->
+  <g>
+    <!-- Badge base -->
+    <circle cx="380" cy="356" r="46" fill="#1D4ED8"/>
+    <!-- Cyan ring -->
+    <circle cx="380" cy="356" r="46" stroke="#22D3EE" stroke-width="14"/>
+
+    <!-- Check mark -->
+    <path
+      d="M362 356 L374 368 L400 340"
+      stroke="#FFFFFF"
+      stroke-width="18"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>

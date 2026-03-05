@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Book-of-Alma icon">
+  <!-- transparent background by default -->
+
+  <!-- Style tokens -->
+  <defs>
+    <style>
+      .navy { stroke:#0B1020; fill:none; }
+      .navyFill { fill:#0B1020; }
+      .cyanFill { fill:#22D3EE; }
+      .emeraldFill { fill:#10B981; }
+      .round { stroke-linecap:round; stroke-linejoin:round; }
+    </style>
+  </defs>
+
+  <!-- ===== Open book (bottom) ===== -->
+  <!-- Book outline (single bold silhouette for 24px readability) -->
+  <path class="navy round" stroke-width="18"
+        d="M112 344
+           C154 316 205 304 256 304
+           C307 304 358 316 400 344
+           V418
+           C358 392 307 380 256 380
+           C205 380 154 392 112 418
+           Z"/>
+
+  <!-- Center spine -->
+  <path class="navy round" stroke-width="16" d="M256 304 V388"/>
+
+  <!-- Page blocks (flat fills) -->
+  <path class="cyanFill"
+        d="M132 352
+           C168 334 211 324 256 324
+           V368
+           C211 368 168 378 132 396
+           Z"/>
+  <path class="emeraldFill"
+        d="M380 352
+           C344 334 301 324 256 324
+           V368
+           C301 368 344 378 380 396
+           Z"/>
+
+  <!-- Inner page contour lines (crisp, no shading) -->
+  <path class="navy round" stroke-width="10"
+        d="M144 364
+           C176 349 214 342 256 342"/>
+  <path class="navy round" stroke-width="10"
+        d="M368 364
+           C336 349 298 342 256 342"/>
+
+  <!-- Small bookmark notch (subtle detail, still readable) -->
+  <path class="navyFill" d="M246 388 h20 v28 l-10 -8 l-10 8 z"/>
+
+  <!-- ===== Neural constellation (above pages) ===== -->
+  <!-- Stem rising from spine -->
+  <path class="navy round" stroke-width="14" d="M256 288 V240"/>
+
+  <!-- Constellation links -->
+  <g class="navy round" stroke-width="12">
+    <path d="M256 240 L196 214"/>
+    <path d="M256 240 L316 212"/>
+    <path d="M196 214 L162 176"/>
+    <path d="M196 214 L212 164"/>
+    <path d="M316 212 L350 176"/>
+    <path d="M316 212 L300 160"/>
+    <path d="M256 240 L256 186"/>
+    <path d="M256 186 L212 164"/>
+    <path d="M256 186 L300 160"/>
+  </g>
+
+  <!-- Nodes (mix cyan/emerald; navy stroke for crisp edges) -->
+  <g class="round" stroke="#0B1020" stroke-width="10">
+    <circle cx="256" cy="240" r="16" fill="#0B1020"/>
+    <circle cx="196" cy="214" r="14" class="cyanFill"/>
+    <circle cx="316" cy="212" r="14" class="emeraldFill"/>
+
+    <circle cx="162" cy="176" r="12" class="emeraldFill"/>
+    <circle cx="212" cy="164" r="12" class="cyanFill"/>
+    <circle cx="256" cy="186" r="12" class="cyanFill"/>
+    <circle cx="300" cy="160" r="12" class="emeraldFill"/>
+    <circle cx="350" cy="176" r="12" class="cyanFill"/>
+  </g>
+
+  <!-- Subtle "spark" dots (kept minimal for 24px) -->
+  <g>
+    <circle cx="232" cy="212" r="5" class="cyanFill"/>
+    <circle cx="280" cy="210" r="5" class="emeraldFill"/>
+  </g>
+</svg>
